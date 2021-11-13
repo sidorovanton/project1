@@ -10,7 +10,6 @@ let personalMovieDB = {
 let lastFilm = prompt("Какой последний фильм смотрели?"),
     raiting = prompt("Какую оценку поставите фильму ?");
   
-personalMovieDB.movie = {
-    [lastFilm]: raiting
-};
+personalMovieDB.movie[lastFilm] = raiting;
+console.log(personalMovieDB);
 
