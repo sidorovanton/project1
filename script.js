@@ -47,6 +47,16 @@ function detectMoviSkill() {
 }
 detectMoviSkill();
 
+function showMyDB(){
+    if (!personalMovieDB.privat){
+        console.log(personalMovieDB);
+    }
+}
 
 
-console.log(personalMovieDB);
+function writeYourGenres(){
+    
+    for (let i = 1; i < 4; i++){
+        personalMovieDB.genres.push(prompt(`Ваш любимый жанр под номером ${i}`));    
+    }
+}
